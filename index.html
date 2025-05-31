@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Your Interview Slot</h1>
+        <div id="message" class="message"></div>
+
+        <form id="bookingForm">
+            <label for="studentName">Your Name:</label>
+            <input type="text" id="studentName" required>
+
+            <label for="studentEmail">Your Email:</label>
+            <input type="email" id="studentEmail" required>
+
+            <label for="slotSelect">Choose a Slot:</label>
+            <select id="slotSelect" required>
+                <option value="">Loading slots...</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <div id="loading" class="loading">Loading available slots...</div>
+        <div id="slotsList" class="slots-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
